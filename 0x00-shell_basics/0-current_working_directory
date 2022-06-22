@@ -1,2 +1,6 @@
 #!/bin/bash
-pwd
+path='readlink -f "${BASH_SOURCE:-$0}"'
+DIR_PATH='dirname $path'
+echo 'the absloute path is' $path
+echo'----------------------------'
+echo'the directory path is' $DIR_PATH
