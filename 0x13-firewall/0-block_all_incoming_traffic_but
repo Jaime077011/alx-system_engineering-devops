@@ -8,6 +8,6 @@ ufw disable
 ufw enable
 ufw default deny incoming
 ufw default allow outgoing
-ufw allow 22/tcp
-ufw allow 443/tcp
-ufw allow 80/tcp
+ufw allow from 52.3.245.61 to any port 22 proto tcp
+ufw allow from 52.3.245.61 to any port 443 proto tcp
+ufw allow from 52.3.245.61 to any port 80 proto tcp
